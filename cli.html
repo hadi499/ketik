@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+      }
+      textarea {
+        font-size: 18px;
+      }
+      .column p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <p>
+          sudo fuser -k 8000/tcp<br />
+          fc-cache -vf ~/.fonts <br />
+          sudo vim /etc/default/grub <br />
+          sudo update-grub <br />
+          sudo apt install mariadb-server <br />
+          sudo mysql_secure_installation <br />
+          sudo mariadb -u root -p <br />
+          GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY 'password' WITH
+          GRANT OPTION; <br />
+          FLUSH PRIVILEGES;<br />
+          sudo systemctl status mariadb <br />
+          sudo service apache2 restart <br />
+          <br />
+          netstat -ano | findstr:8080 <br />
+          taskkill /PID 3342 /F
+        </p>
+      </div>
+      <div class="column">
+        <p>
+          <textarea rows="20" cols="60"></textarea>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
